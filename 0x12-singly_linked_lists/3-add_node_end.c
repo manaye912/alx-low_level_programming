@@ -8,10 +8,10 @@
  * Return: address of the head.
  */
 
-OOBlist_t *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new, *temp;
-BOB	size_t nchar;
+	size_t n;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -19,10 +19,10 @@ BOB	size_t nchar;
 
 	new->str = strdup(str);
 
-	for (nchar = 0; str[nchar]; nchar++)
+	for (n = 0; str[n]; n++)
 		;
 
-	new->len = nchar;
+	new->len = n;
 	new->next = NULL;
 	temp = *head;
 
@@ -38,4 +38,4 @@ BOB	size_t nchar;
 	}
 
 	return (*head);
-
+}
