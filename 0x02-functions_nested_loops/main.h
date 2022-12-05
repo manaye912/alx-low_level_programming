@@ -17,10 +17,5 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 void print_fib(int len);
-static void print_thousand(int sum);
-static void print_hundred(int sum);
-static void print_tenth(int sum);
-static void print_base10(int sum);
-void print_fib_x50(void);
 
 #endif

@@ -10,7 +10,7 @@ int main(void)
 
 	while (1)
 	{
-		fsum = f1 + f2;
+		sum = f1 + f2;
 		if (sum > 4000000)
 			break;
 
@@ -20,7 +20,7 @@ int main(void)
 		f1 = f2;
 		f2 = sum;
 	}
-	printf("%lu\n", tot_sum);
+	printf("%.0f\n", tot_sum);
 
 	return (0);
 }

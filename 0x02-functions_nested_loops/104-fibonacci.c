@@ -10,12 +10,12 @@ void print_fib(int len)
 {
 	unsigned int target, i;
 
-	unsigned int former_l, former_r,;
+	unsigned int former_l, former_r;
 	unsigned int latter_l, latter_r;
 	unsigned int fib_l, fib_r;
 
-	f = 1;
-	l = 2;
+	fib_r = 1;
+	fib_l = 2;
 	target = len - 2;
 	for (i = 0 ; i < target ; i++)
 	{
