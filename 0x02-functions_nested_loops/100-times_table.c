@@ -80,7 +80,10 @@ static void print_thousand(int sum)
 		_putchar('0' + (sum / 1000));
 	}
 }
-
+/**
+ * print_times_table -  prints the n times table, starting with 0.
+ * @n: number of time table
+ * Return: 0
 void print_times_table(int n)
 {
 	int v, h;
