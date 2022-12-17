@@ -9,16 +9,22 @@
  */
 int main(int argc, char *argv[])
 {
-	int mul = 1;
+	int i, j;
 
-	if (argc == 3)
+	if (argc == 1 || argc == 2)
 	{
-		mul *= atoi(argv[argc - 2]);
-		mul *= atoi(argv[argc - 1]);
-		printf("%d\n", mul);
+		printf("Error\n");
+		return (1);
 	}
 	else
-		printf("Error\n");
-	return (0);
+	{
+		j = 1;
 
+		for (i = 1; i < 3; i++)
+			j *= atoi(argv[i]);
+
+		printf("%d\n", j);
+	}
+
+	return (0);
 }
